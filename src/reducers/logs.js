@@ -7,8 +7,8 @@ const logs = (state = [], action) => {
     switch (action.type) {
         case ADD_LOG:
             const log = {
-                description = action.description,
-                operatedAt = action.operatedAt,
+                description: action.description,
+                operatedAt: action.operatedAt,
             }
             return [log, ...state]
         case DELETE_ALL_LOGS:
